@@ -8,6 +8,7 @@
 #include <fstream>
 #include <conio.h>
 #include "teacherMode.h"
+#include "ManagerDb.h"
 
 
 using namespace std;
@@ -20,6 +21,8 @@ void setcolor(int text, int background)
 
 void teacherMode()
 {
+	ManagerDb* db = ManagerDb::GetInstance();
+
 	SetConsoleCP(1251);
 	SetConsoleOutputCP(1251);
 	setcolor(14, 0);
@@ -28,7 +31,7 @@ void teacherMode()
 	setcolor(15, 0);
 	string log, pas;
 	bool check = false;
-	while (log != "teacher" || pas != "teacher")
+	while (!check)
 	{
 		cout << endl << "Логин: ";
 		cin >> log;
@@ -50,11 +53,11 @@ void teacherMode()
 			}
 		}
 		pas = temp;
-		if (log == "teacher" && pas == "teacher")
+		if (db->authenticateTeacher(log,pas)!=-1)
 		{
 			check = true;
 		}
-		if (log != "teacher" || pas != "teacher")
+		else
 		{
 			setcolor(4, 0);
 			cout << endl << "Неверный логин или пароль" << endl;

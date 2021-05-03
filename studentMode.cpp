@@ -8,6 +8,7 @@
 #include <conio.h>
 #include <string>
 #include "studentMode.h"
+#include "ManagerDb.h"
 
 using namespace std;
 
@@ -19,6 +20,7 @@ void setcolor(int text, int background)
 
 void studentMode()
 {
+	auto* db = ManagerDb::GetInstance();
 	SetConsoleCP(1251);
  	SetConsoleOutputCP(1251);
  	setcolor(14,0);
@@ -27,7 +29,7 @@ void studentMode()
 	setcolor(15,0);
 	string log, pas;
 	bool check = false;
-	while (log != "silkin" || pas != "silkin")
+	while (!check)
 	{
 		cout << endl << "Логин: ";
 		cin >> log;
@@ -49,11 +51,11 @@ void studentMode()
 			}
 		}
 		pas = temp;
-		if (log == "silkin" && pas == "silkin")
+		if (db->authenticateStudent(log,pas)!=-1)
 		{
 			check = true;	
 		}
-		if (log != "silkin" || pas != "silkin")
+		else
 		{
 			setcolor(4,0);
 			cout << endl << "Неверный логин или пароль!" << endl;

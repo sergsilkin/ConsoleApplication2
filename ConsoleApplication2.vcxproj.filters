@@ -18,36 +18,36 @@
     <ClCompile Include="ConsoleApplication2.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Новая папка (3)\ManagerDb.cpp">
+    <ClCompile Include="ManagerDb.cpp">
       <Filter>Файлы ресурсов</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Новая папка (3)\Student.cpp">
+    <ClCompile Include="Student.cpp">
       <Filter>Файлы ресурсов</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Новая папка (3)\Teacher.cpp">
+    <ClCompile Include="studentMode.cpp">
       <Filter>Файлы ресурсов</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Система теста по программированию\studentMode.cpp">
+    <ClCompile Include="Teacher.cpp">
       <Filter>Файлы ресурсов</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Система теста по программированию\teacherMode.cpp">
+    <ClCompile Include="teacherMode.cpp">
       <Filter>Файлы ресурсов</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Новая папка (3)\Student.h">
+    <ClInclude Include="ManagerDb.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Новая папка (3)\Teacher.h">
+    <ClInclude Include="Student.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Система теста по программированию\studentMode.h">
+    <ClInclude Include="studentMode.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Система теста по программированию\teacherMode.h">
+    <ClInclude Include="Teacher.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Новая папка (3)\ManagerDb.h">
+    <ClInclude Include="teacherMode.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
