@@ -88,6 +88,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -139,7 +140,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Новая папка (3)\ManagerDb.cpp" />
+    <ClCompile Include="..\..\Новая папка (3)\Student.cpp" />
+    <ClCompile Include="..\..\Новая папка (3)\Teacher.cpp" />
+    <ClCompile Include="..\..\Система теста по программированию\studentMode.cpp" />
+    <ClCompile Include="..\..\Система теста по программированию\teacherMode.cpp" />
     <ClCompile Include="ConsoleApplication2.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Новая папка (3)\ManagerDb.h" />
+    <ClInclude Include="..\..\Новая папка (3)\Student.h" />
+    <ClInclude Include="..\..\Новая папка (3)\Teacher.h" />
+    <ClInclude Include="..\..\Система теста по программированию\studentMode.h" />
+    <ClInclude Include="..\..\Система теста по программированию\teacherMode.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
